@@ -22,7 +22,10 @@ angka::angka(int i)
 
 angka::angka()
 { //destructor
-   
+    cout << endl;
+    cetakData();
+    delete[]arr;
+    cout <<"alamat array sudah dilepaskan"<<endl;
 }
 
 void angka::cetakData()
