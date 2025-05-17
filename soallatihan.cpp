@@ -22,7 +22,14 @@ public:
 };
 
 class Mahasiswa {
- {}
+private:
+    string nama;
+    string NIM;
+    float nilai;
+
+    friend class Dosen;
+public:
+    Mahasiswa(string n, string nim) : nama(n), NIM(nim), nilai(0) {}
 
     void tampil() {
        
