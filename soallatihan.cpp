@@ -32,7 +32,7 @@ public:
     Mahasiswa(string n, string nim) : nama(n), NIM(nim), nilai(0) {}
 
     void tampil() {
-       
+        cout << "Mahasiswa: " << nama << ", NIM: " << NIM << ", Nilai: " << nilai << endl;
     }
 };
 
