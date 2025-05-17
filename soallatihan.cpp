@@ -45,7 +45,19 @@ void Dosen::tampil() {
 }
 
 class Staff {
+private:
+    string nama;
+    string idStaff;
+    float gaji;
 
+public:
+    Staff(string n, string id, float g) : nama(n), idStaff(id), gaji(g) {}
+
+    void ubahPangkat(Dosen* d, string pangkatBaru) {
+        d->pangkat = pangkatBaru;
+    }
+
+    friend float lihatGajiStaff(Staff* s);
 };
 
 float lihatGajiStaff(Staff* s) {
