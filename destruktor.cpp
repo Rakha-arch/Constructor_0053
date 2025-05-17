@@ -14,7 +14,10 @@ public:
 };
 // definisi member functon
 angka::angka(int i)
-{  
+{//constructor
+    panjang = i;
+    arr = new int[i];
+    isiData();    
 }
 
 angka::angka()
