@@ -41,7 +41,7 @@ void Dosen::beriNilai(Mahasiswa* m, float nilai) {
 }
 
 void Dosen::tampil() {
-   
+    cout << "Dosen: " << nama << ", NIDN: " << NIDN << ", Pangkat: " << pangkat << ", Gaji: " << gaji << endl;
 }
 
 class Staff {
