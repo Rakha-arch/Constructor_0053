@@ -65,5 +65,17 @@ float lihatGajiStaff(Staff* s) {
 }
 
 int main() {
-   
+    Mahasiswa m1("Fikri", "123456");
+    Dosen d1("Dr. Ahmad", "001", "rektor", 10000000);
+    Staff s1("Bu Rina", "S01", 5000000);
+
+    d1.beriNilai(&m1, 85);
+    s1.ubahPangkat(&d1, "Guru Besar");
+
+    m1.tampil();
+    d1.tampil();
+
+    cout << "Gaji staff dilihat oleh universitas: " << lihatGajiStaff(&s1) << endl;
+
+    return 0;
 }
