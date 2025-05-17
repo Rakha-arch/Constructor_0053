@@ -12,7 +12,8 @@ public:
     void cetakData();
     void isiData();
 };
-
+// definisi member functon
+angka::angka(int i)
 {  
 }
 
