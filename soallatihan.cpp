@@ -61,7 +61,7 @@ public:
 };
 
 float lihatGajiStaff(Staff* s) {
-    
+    return s->gaji;
 }
 
 int main() {
