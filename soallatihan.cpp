@@ -37,7 +37,7 @@ public:
 };
 
 void Dosen::beriNilai(Mahasiswa* m, float nilai) {
- 
+    m->nilai = nilai; // Akses nilai karena Dosen adalah friend
 }
 
 void Dosen::tampil() {
